@@ -26,6 +26,7 @@ from dotenv import load_dotenv
 from alpaca.trading.client import TradingClient
 from alpaca.trading.enums import OrderSide, TimeInForce
 from alpaca.data.live.stock import StockDataStream
+from alpaca.data.enums import DataFeed
 
 # Your utils
 import utils
@@ -38,7 +39,7 @@ from pandas_datareader import data as pdr
 
 # ---------- Config you likely want to edit ----------
 # Local TLT CSV (daily or intraday; needs 'timestamp' and 'close' columns)
-TLT_CSV_PATH = "/Users/xinhuang/Documents/GitHub/Machine-Trader/tlt_yield_prediction_strategy/price_bars_20250807.csv"
+TLT_CSV_PATH = "/Users/xinhuang/Documents/GitHub/Machine-Trader/tlt_yield_prediction_strategy/price_bars_20251103.csv"
 
 # Forecast hyperparams
 HIDDEN_SIZE = 30
